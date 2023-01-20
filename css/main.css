@@ -1,21 +1,34 @@
 .jumbotron {
-    padding: 20px;
-    background-color: lightcoral;
-    color: black;
+    padding: 15px;
+    background-color: #1E1927;
+    color: #FBF8FF;
     margin-bottom: 20px;
 }
 
 footer {
     padding: 20px;
-    background-color:lightcoral;
+    background-color:#1E1927;
+    color: #FBF8FF;
     margin-top: 20px;
 }
 
 .card-hotel{
-    flex: 1 150px;
-    margin: 5px;
+    flex: 1 250px;
+    margin: 10px;
+    padding: 5px;
 }
 
 .btn-click{
     width: 100%;
+    background-color: #2826C4;
+    color: #FBF8FF;
+}
+.btn-click:hover{
+    color: #1E1927;
+    background-color: #988AB5;
+}
+
+.container-hotels{
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
