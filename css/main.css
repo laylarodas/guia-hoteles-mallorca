@@ -1,8 +1,18 @@
+.navbar-hotels{
+    background-color: #988AB5;
+    color: #FBF8FF;
+}
+
+.navbar-name{
+    padding-left: 10px;
+}
+
 .jumbotron {
     padding: 15px;
     background-color: #1E1927;
     color: #FBF8FF;
     margin-bottom: 20px;
+    margin-top: 50px;
 }
 
 footer {
@@ -12,20 +22,29 @@ footer {
     margin-top: 20px;
 }
 
+.footer-address-icon{
+    margin-right: 5px;
+}
+
 .card-hotel{
     flex: 1 250px;
     margin: 10px;
-    padding: 5px;
 }
 
 .btn-click{
     width: 100%;
     background-color: #2826C4;
     color: #FBF8FF;
+    border-radius: 0;
 }
-.btn-click:hover{
+.btn-click:hover ,.btn-form-contact:hover{
     color: #1E1927;
     background-color: #988AB5;
+}
+.btn-form-contact{
+    margin-top: 10px;
+    background-color: #2826C4;
+    color: #FBF8FF;
 }
 
 .container-hotels{

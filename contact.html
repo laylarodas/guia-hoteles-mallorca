@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+
+    <title>Guia de hoteles</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md fixed-top navbar-hotels">
+        <a href="#" class="navbar-brand navbar-name">Guía</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="./about.html" class="nav-link">Nosotros</a></li>
+                <li class="nav-item"><a href="./price.html" class="nav-link">Precios</a></li>
+                <li class="nav-item"><a href="./conditions.html" class="nav-link">Términos y condiciones</a></li>
+                <li class="nav-item"><a href="./contact.html" class="nav-link active">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <h1>Hoteles en Mallorca</h1>
+    </div>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item" aria-current="page"><a href="./index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+            </ol>
+        </nav>
+        <hr>
+
+        <h1>Deja tu comentario</h1>
+        
+        <form>
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="name">Nombre</label>
+                    <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre">
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="lastName">Apellido</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Ingrese su apellido">
+                </div>
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electronico">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="address">Domicilio</label>
+                    <input type="text" class="form-control" id="address" placeholder="Ingrese su domicilio">
+                </div>
+                <div class="form-group col-sm-3">
+                    <label for="provinces">Provincia</label>
+                    <select id="provinces" class="form-control">
+                        <option selected>Islas Baleares</option>
+                        <option>Madrid</option>
+                        <option>Barcelona</option>
+                        <option>Sevilla</option>
+                        <option>Alicante</option>
+                        <option>Asturias</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comment">Comentario</label>
+                <textarea id="comment" rows="5" class="form-control" placeholder="Ingrese su comentario"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="gridCheck" class="form-check-input">
+                <label for="contact">Quiero que me contacten</label>
+            </div>
+            <button type="submit" class="btn btn-form-contact">Enviar</button>
+        </form>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col-sm-4 d-flex flex-column">
+                <a href="http://www.facebook.com">Facebook</a>
+                <a href="http://www.instagram.com">Instagram</a>
+                <a href="http://www.twitter.com">Twitter</a>
+                <a href="http://www.google.com">Google+</a>
+            </div>
+            <div class="col-sm-4 d-flex flex-column">
+                <address>
+                    <h3>Oficina central</h3>
+                    <p><ion-icon name="location-outline" class="footer-address-icon"></ion-icon>Talcahuano 301, CABA, Argentina</p>
+                    <p><ion-icon name="phone-portrait-sharp" class="footer-address-icon"></ion-icon>+5491124578962</p>
+                    <p><ion-icon name="mail-outline" class="footer-address-icon"></ion-icon>contacto@guiahoteles.com</p>
+                </address>
+            </div>
+            <div class="col-sm-4 d-flex flex-column align-items-end">
+                <a href="#">Nosotros</a>
+                <a href="#">Precios</a>
+                <a href="#">Terminos y condiciones</a>
+                <a href="#">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
