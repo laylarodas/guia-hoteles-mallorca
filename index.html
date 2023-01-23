@@ -122,7 +122,7 @@
                     <p class="card-text">Historia, gastronomía y diseño exquisito son las características del hotel El Llorenç Parc de la Mar, un galardonado boutique hotel en el corazón de Palma</p>
                 </div>
                 <div>
-                    <button class="btn btn-click"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
+                    <button class="btn btn-click" data-bs-toggle="modal" data-bs-target="#contactHotel"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
                 </div>
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between">
@@ -133,7 +133,7 @@
                     <p class="card-text">Siéntete como en casa en este hotel boutique de 13 habitaciones en el corazón de Valldemossa. Es amigable, sirve un excelente desayuno y está lleno de personalidad.</p>
                 </div>
                 <div>
-                    <button class="btn btn-click"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
+                    <button class="btn btn-click" data-bs-toggle="modal" data-bs-target="#contactHotel"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
                 </div>
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between">
@@ -144,7 +144,7 @@
                     <p class="card-text">Para una escapada romántica con golf, playas, senderismo o ciclismo reserva en Can Estades Finca Hotel, a las afueras del bonito pueblo de Calvià.</p>
                 </div>
                 <div>
-                    <button class="btn btn-click"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
+                    <button class="btn btn-click" data-bs-toggle="modal" data-bs-target="#contactHotel"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
                 </div>
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between">
@@ -155,7 +155,7 @@
                     <p class="card-text">Disfruta de sus lujosas suites, mímate en el spa o cena en alguno de los restaurantes de este hotel de Port de Sóller.</p>
                 </div>
                 <div>
-                    <button class="btn btn-click"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
+                    <button class="btn btn-click" data-bs-toggle="modal" data-bs-target="#contactHotel"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
                 </div>
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between">
@@ -166,7 +166,7 @@
                     <p class="card-text">Reserva una estancia en el elegante hotel boutique Mar Calma para disfrutar de un estilo moderno y confortable en el Port de Pollensa</p>
                 </div>
                 <div>
-                    <button class="btn btn-click"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
+                    <button class="btn btn-click" data-bs-toggle="modal" data-bs-target="#contactHotel"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
                 </div>
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between">
@@ -177,7 +177,7 @@
                     <p class="card-text">El hotel Can Cera, situado en pleno Casco Antiguo de Palma, dispone de 14 habitaciones que garantizan intimidad, encanto y tradición.</p>
                 </div>
                 <div>
-                    <button class="btn btn-click"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
+                    <button class="btn btn-click" data-bs-toggle="modal" data-bs-target="#contactHotel"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
                 </div>
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between">
@@ -188,7 +188,34 @@
                     <p class="card-text">Está situado en el prestigioso Paseo del Borne. Este lujoso hotel boutique de 5 estrellas es una mansión restaurada del siglo XV. Su restaurante de fusión, De Tokio a Lima, es uno de los mejores de Palma y cuenta con una maravillosa terraza para empaparse del ambiente.</p>
                 </div>
                 <div>
-                    <button class="btn btn-click"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
+                    <button class="btn btn-click" data-bs-toggle="modal" data-bs-target="#contactHotel"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
+                </div>
+            </div>
+        </div>
+
+        <!--  CONTACT HOTEL  -->
+        <div class="modal fade" id="contactHotel" role="dialog" tabindex="-1" aria-labelledby="contactHotelLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>Contacto con el hotel</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="userEmail" class="col-form-label">Tu email</label>
+                                <input type="text" id="userEmail" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="col-form-label">Mensaje</label>
+                                <textarea name="" id="message" rows="5" class="form-control"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-click">Enviar</button>
+                    </div>
                 </div>
             </div>
         </div>
