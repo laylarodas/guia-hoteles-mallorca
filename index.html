@@ -14,6 +14,7 @@
     <title>Guia de hoteles</title>
   </head>
   <body>
+    <!--   NAVBAR LINKS  -->
     <nav class="navbar navbar-expand-md fixed-top navbar-hotels">
         <a href="#" class="navbar-brand navbar-name">Guía</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,27 +34,85 @@
         <h1>Hoteles en Mallorca</h1>
     </div>
     <div class="container">
+
+        <!--  WEBSITE MAP  -->
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item active" aria-current="page">Home</li>
             </ol>
         </nav>
+
         <hr>
+
+        <!--  WEBSITE INFO -->
         <div class="row">
-            <div class="col-sm-4">
-                <h4>Bienvenido a la maravillosa Isla</h4>
-                <p>Mallorca es la mayor de las Islas Baleares de España, con una larga y fascinante historia.</p>
+            <div class="col-sm-3">
+                <button class="btn btn-click" type="button" data-bs-toggle="collapse" data-bs-target="#work" aria-expanded="false" aria-controls="multiCollapse1">¿Cómo funciona?</button>
             </div>
-            <div class="col-sm-4">
-                <h4>Los Mejores Hoteles de Palma</h4>
-                <p>Mallorca ofrece una impresionante variedad de hoteles y alojamientos, para disfrutar de la playa, el cicloturismo o una escapada a la ciudad</p>
+            <div class="col-sm-3">
+                <button class="btn btn-click" type="button" data-bs-toggle="collapse" data-bs-target="#reserve" aria-expanded="false" aria-controls="multiCollapse2">¿Cómo reservar?</button>
             </div>
-            <div class="col-sm-4">
-                <h4>El tiempo en Baleares</h4>
-                <p>El temperado clima mediterráneo de Palma es una de sus facetas más conocidas de la isla, ya que hace que casi cualquier día del año sea excelente.</p>
+            <div class="col-sm-3">
+                <button class="btn btn-click" type="button" data-bs-toggle="collapse" data-bs-target="#pay" aria-expanded="false" aria-controls="multiCollapse3">Medios de pago</button>
+            </div>
+            <div class="col-sm-3">
+                <button class="btn btn-click" type="button" data-bs-toggle="collapse" data-bs-target="#security" aria-expanded="false" aria-controls="multiCollapse4">Sitio Seguro</button>
             </div>
         </div>
-        <img class="img-fluid" src="./images/banner-hotel.jpg" alt="img-banner-hotel">
+        <div class="row">
+            <div class="col-sm-3 collapse multi-collapse" id="work">
+                <p>
+                    <h4>¿Cómo funciona?</h4>
+                    <p>Buscá los hoteles de acuerdo a tu preferencia.</p>
+                </p>
+            </div>
+            <div class="col-sm-3 collapse multi-collapse" id="reserve">
+                <p>
+                    <h4>¿Cómo reservar?</h4>
+                    <p>Selecciona el lugar y reserva ingresando tus datos.</p>
+                </p>
+            </div>
+            <div class="col-sm-3 collapse multi-collapse" id="pay">
+                <p>
+                    <h4>Medios de pago</h4>
+                    <p>Paga con tarjeta de crédito o débito. Puedes tener hasta 18 cuotas sin interés!</p>
+                </p>
+            </div>
+            <div class="col-sm-3 collapse multi-collapse" id="security">
+                <p>
+                    <h4>Medios de pago</h4>
+                    <p>Siempre estas protegid@!</p>
+                </p>
+            </div>
+        </div>
+
+        <!-- INFO PLACE -->
+        <div class="d-flex flex-wrap mt-2">
+            <div class="card card-hotel d-flex flex-column justify-content-between justify-content-between">
+                <div class="card-body">
+                    <h4 class="card-title">Bienvenido a la maravillosa Isla</h4>
+                    <p class="card-text">Mallorca es la mayor de las Islas Baleares de España, con una larga y fascinante historia.</p>
+                </div>
+            </div>
+            <div class="card card-hotel d-flex flex-column justify-content-between justify-content-between">
+                <div class="card-body">
+                    <h4 class="card-title">Los Mejores Hoteles de Palma</h4>
+                    <p class="card-text">Mallorca ofrece una impresionante variedad de hoteles y alojamientos, para disfrutar de la playa, el cicloturismo o una escapada a la ciudad</p>
+                </div>
+            </div>
+            <div class="card card-hotel d-flex flex-column justify-content-between justify-content-between">
+                <div class="card-body">
+                    <h4 class="card-title">El tiempo en Baleares</h4>
+                    <p class="card-text">El temperado clima mediterráneo de Palma es una de sus facetas más conocidas de la isla, ya que hace que casi cualquier día del año sea excelente.</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <!--   BANNER   -->
+        <img class="img-fluid mt-2" src="./images/banner-hotel.jpg" alt="img-banner-hotel">
+
+        <!-- CARDS HOTELS -->
         <div class="d-flex flex-wrap container-hotels">
             <div class="card card-hotel d-flex flex-column justify-content-between justify-content-between">
                 <div class="card-body">
