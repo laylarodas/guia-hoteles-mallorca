@@ -15,6 +15,10 @@
     margin-top: 50px;
 }
 
+.tab-content{
+    margin-top: 10px;
+}
+
 footer {
     padding: 20px;
     background-color:#1E1927;
@@ -25,7 +29,6 @@ footer {
 .footer-address-icon{
     margin-right: 5px;
 }
-
 .card-hotel{
     flex: 1 250px;
     margin: 10px;
