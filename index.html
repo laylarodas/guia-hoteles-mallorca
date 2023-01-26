@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
     <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
 
@@ -167,7 +167,7 @@
                     <p class="card-text">Historia, gastronomía y diseño exquisito son las características del hotel El Llorenç Parc de la Mar, un galardonado boutique hotel en el corazón de Palma</p>
                 </div>
                 <div>
-                    <button class="btn btn-click" data-bs-toggle="modal" data-bs-target="#contactHotel"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
+                    <button class="btn btn-click" data-bs-toggle="modal" data-bs-target="#contactHotel" id="reserveBtn1"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
                 </div>
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between">
@@ -178,7 +178,7 @@
                     <p class="card-text">Siéntete como en casa en este hotel boutique de 13 habitaciones en el corazón de Valldemossa. Es amigable, sirve un excelente desayuno y está lleno de personalidad.</p>
                 </div>
                 <div>
-                    <button class="btn btn-click" data-bs-toggle="modal" data-bs-target="#contactHotel"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
+                    <button class="btn btn-click" data-bs-toggle="modal" data-bs-target="#contactHotel" id="reserveBtn2"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
                 </div>
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between">
@@ -189,7 +189,7 @@
                     <p class="card-text">Para una escapada romántica con golf, playas, senderismo o ciclismo reserva en Can Estades Finca Hotel, a las afueras del bonito pueblo de Calvià.</p>
                 </div>
                 <div>
-                    <button class="btn btn-click" data-bs-toggle="modal" data-bs-target="#contactHotel"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
+                    <button class="btn btn-click" data-bs-toggle="modal" data-bs-target="#contactHotel" id="reserveBtn3"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
                 </div>
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between">
@@ -200,7 +200,7 @@
                     <p class="card-text">Disfruta de sus lujosas suites, mímate en el spa o cena en alguno de los restaurantes de este hotel de Port de Sóller.</p>
                 </div>
                 <div>
-                    <button class="btn btn-click" data-bs-toggle="modal" data-bs-target="#contactHotel"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
+                    <button class="btn btn-click" data-bs-toggle="modal" data-bs-target="#contactHotel" id="reserveBtn4"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
                 </div>
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between">
@@ -211,7 +211,7 @@
                     <p class="card-text">Reserva una estancia en el elegante hotel boutique Mar Calma para disfrutar de un estilo moderno y confortable en el Port de Pollensa</p>
                 </div>
                 <div>
-                    <button class="btn btn-click" data-bs-toggle="modal" data-bs-target="#contactHotel"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
+                    <button class="btn btn-click" data-bs-toggle="modal" data-bs-target="#contactHotel" id="reserveBtn5"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
                 </div>
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between">
@@ -222,7 +222,7 @@
                     <p class="card-text">El hotel Can Cera, situado en pleno Casco Antiguo de Palma, dispone de 14 habitaciones que garantizan intimidad, encanto y tradición.</p>
                 </div>
                 <div>
-                    <button class="btn btn-click" data-bs-toggle="modal" data-bs-target="#contactHotel"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
+                    <button class="btn btn-click" data-bs-toggle="modal" data-bs-target="#contactHotel" id="reserveBtn6"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
                 </div>
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between">
@@ -233,7 +233,7 @@
                     <p class="card-text">Está situado en el prestigioso Paseo del Borne. Este lujoso hotel boutique de 5 estrellas es una mansión restaurada del siglo XV. Su restaurante de fusión, De Tokio a Lima, es uno de los mejores de Palma y cuenta con una maravillosa terraza para empaparse del ambiente.</p>
                 </div>
                 <div>
-                    <button class="btn btn-click" data-bs-toggle="modal" data-bs-target="#contactHotel"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
+                    <button class="btn btn-click" data-bs-toggle="modal" data-bs-target="#contactHotel" id="reserveBtn7"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
                 </div>
             </div>
         </div>
@@ -314,22 +314,88 @@
             interval: 2000,
             touch: false
         });
-
-        const myModalEl = document.getElementById('contactHotel');
-        if (myModalEl) {
-            myModalEl.addEventListener('show.bs.modal', function (event) {
-                console.log("El modal se esta mostrando");
+        $('#contactHotel').on('show.bs.modal', function (event) {
+            $('#reserveBtn1').on("click", function (event) {
+                $('·reserveBtn1').removeClass('btn-click');
+                $('#reserveBtn1').addClass('btn-primary');
+                $('#reserveBtn1').prop("disabled",true);
             });
-            myModalEl.addEventListener('shown.bs.modal', function (event) {
-                console.log("El modal se mostró");
+            $('#reserveBtn2').on("click", function (event) {
+                $('·reserveBtn2').removeClass('btn-click');
+                $('#reserveBtn2').addClass('btn-primary');
+                $('#reserveBtn2').prop("disabled",true);
             });
-            myModalEl.addEventListener('hide.bs.modal', function (event) {
-                console.log("El modal se oculta");
+            $('#reserveBtn3').on("click", function (event) {
+                $('·reserveBtn3').removeClass('btn-click');
+                $('#reserveBtn3').addClass('btn-primary');
+                $('#reserveBtn3').prop("disabled",true);
             });
-            myModalEl.addEventListener('hidden.bs.modal', function (event) {
-                console.log("El modal se ocultó");
+            $('#reserveBtn4').on("click", function (event) {
+                $('·reserveBtn4').removeClass('btn-click');
+                $('#reserveBtn4').addClass('btn-primary');
+                $('#reserveBtn4').prop("disabled",true);
             });
-        };
+            $('#reserveBtn5').on("click", function (event) {
+                $('·reserveBtn5').removeClass('btn-click');
+                $('#reserveBtn5').addClass('btn-primary');
+                $('#reserveBtn5').prop("disabled",true);
+            });
+            $('#reserveBtn6').on("click", function (event) {
+                $('·reserveBtn6').removeClass('btn-click');
+                $('#reserveBtn6').addClass('btn-primary');
+                $('#reserveBtn6').prop("disabled",true);
+            });
+            $('#reserveBtn7').on("click", function (event) {
+                $('·reserveBtn7').removeClass('btn-click');
+                $('#reserveBtn7').addClass('btn-primary');
+                $('#reserveBtn7').prop("disabled",true);
+            });
+            
+        });
+       
+        $('#contactHotel').on('shown.bs.modal', function (event) {
+            console.log("El modal se mostró");
+        });
+        $('#contactHotel').on('hide.bs.modal', function (event) {
+            console.log("El modal se oculta");
+        });
+        $('#contactHotel').on('hidden.bs.modal', function (event) {
+            $('#reserveBtn1').on("click", function (event) {
+                $('·reserveBtn1').removeClass('btn-primary');
+                $('#reserveBtn1').addClass('btn-click');
+            });
+            $('#reserveBtn1').prop("disabled",false);
+            $('#reserveBtn2').on("click", function (event) {
+                $('·reserveBtn2').removeClass('btn-primary');
+                $('#reserveBtn2').addClass('btn-click');
+            });
+            $('#reserveBtn2').prop("disabled",false);
+            $('#reserveBtn3').on("click", function (event) {
+                $('·reserveBtn3').removeClass('btn-primary');
+                $('#reserveBtn3').addClass('btn-click');
+            });
+            $('#reserveBtn3').prop("disabled",false);
+            $('#reserveBtn4').on("click", function (event) {
+                $('·reserveBtn4').removeClass('btn-primary');
+                $('#reserveBtn4').addClass('btn-click');
+            });
+            $('#reserveBtn4').prop("disabled",false);
+            $('#reserveBtn5').on("click", function (event) {
+                $('·reserveBtn5').removeClass('btn-primary');
+                $('#reserveBtn5').addClass('btn-click');
+            });
+            $('#reserveBtn5').prop("disabled",false);
+            $('#reserveBtn6').on("click", function (event) {
+                $('·reserveBtn6').removeClass('btn-primary');
+                $('#reserveBtn6').addClass('btn-click');
+            });
+            $('#reserveBtn6').prop("disabled",false);
+            $('#reserveBtn7').on("click", function (event) {
+                $('·reserveBtn7').removeClass('btn-primary');
+                $('#reserveBtn7').addClass('btn-click');
+            });
+            $('#reserveBtn7').prop("disabled",false);
+        });
     </script>
   </body>
 </html>

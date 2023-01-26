@@ -66,6 +66,10 @@ footer {
     background-color: #988AB5;
 }
 
+.btn-primary{
+    width: 100%;
+}
+
 /* CONTACT PAGE - BUTTON */
 .btn-form-contact{
     margin-top: 10px;

@@ -1,0 +1,97 @@
+$grey: #988AB5;
+$white: #FBF8FF;
+$black: #1E1927;
+$blackOpacity: rgba(30, 25, 39, 0.6);
+$blue:#2826C4;
+
+@mixin margins ($top, $bottom){
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+@mixin lateralMargins ($left, $right){
+    margin-left: $left;
+    margin-right: $right;
+}
+
+/* NAVBAR */
+
+.navbar-hotels{
+    background-color: $grey;
+    color: $white;
+}
+
+.navbar-name{
+    padding-left: 10px;
+}
+
+/* JUMBOTRON */
+.jumbotron {
+    padding: 15px;
+    background-color: $black;
+    color: $white;
+    @include margins(50px, 20px);
+}
+
+/* FOOTER */
+
+footer {
+    padding: 20px;
+    background-color:$black;
+    color: $white;
+    @include margins(20px, 0px);
+}
+
+.footer-address-icon{
+    @include lateralMargins(0px, 5px);
+}
+
+/* INDEX PAGE - BANNER */
+
+.description-slide{
+    color: $white;
+    font-style: italic;
+    background-color: $blackOpacity;
+}
+
+
+/* INDEX PAGE - CARDS HOTELS */
+
+.container-hotels{
+    @include margins(30px, 50px);
+    @include lateralMargins(20px, 10px);
+}
+
+/* CARD HOTELS */
+.card-hotel{
+    flex: 1 250px;
+    @include margins(8px, 10px);
+    @include lateralMargins(8px, 8px);
+
+}
+
+.btn-click{
+    width: 100%;
+    background-color: $blue;
+    color: $white;
+}
+.btn-click:hover ,.btn-form-contact:hover{
+    color: $black;
+    background-color: $grey;
+}
+
+.btn-primary{
+    width: 100%;
+}
+
+/* CONTACT PAGE - BUTTON */
+.btn-form-contact{
+    @include margins(10px, 0px);
+    background-color: $blue;
+    color: $white;
+}
+
+
+/* PAGE PRICE - TAB */
+.tab-content{
+    @include margins(10px, 0px);
+}

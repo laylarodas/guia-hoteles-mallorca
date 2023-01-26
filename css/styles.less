@@ -1,0 +1,83 @@
+@red:#E41801;
+@green: #114B02;
+@yellow: #F1F377;
+
+.margins (@top : 0px, @bottom: 0px){
+    margin-top: @top;
+    margin-bottom: @bottom;
+}
+.lateralMargins (@left : 0px, @right: 0px){
+    margin-left: @left;
+    margin-right: @right;
+}
+
+/* NAVBAR */
+.navbar-hotels {
+    background-color: @yellow;
+    color: #FBF8FF; }
+  
+  .navbar-name {
+    padding-left: 10px; }
+  
+  /* JUMBOTRON */
+  .jumbotron {
+    padding: 15px;
+    background-color: @green;
+    color: #FBF8FF; 
+    .margins(50px, 20px);
+}
+  
+  /* FOOTER */
+  footer {
+    padding: 20px;
+    background-color: @green;
+    color: #FBF8FF;
+    .margins(20px, 0px);
+}
+  
+  .footer-address-icon {
+    .lateralMargins(0px, 5px);
+}
+  
+  /* INDEX PAGE - BANNER */
+  .description-slide {
+    color: #FBF8FF;
+    font-style: italic;
+    background-color: rgba(30, 25, 39, 0.6); }
+  
+  /* INDEX PAGE - CARDS HOTELS */
+  .container-hotels {
+    .margins(30px , 50px);
+    .lateralMargins(20px, 10px);
+}
+  
+  /* CARD HOTELS */
+  .card-hotel {
+    flex: 1 250px;
+    .margins(8px , 10px);
+    .lateralMargins(8px, 8px);
+}
+  
+  .btn-click {
+    width: 100%;
+    background-color: @red;
+    color: #FBF8FF; }
+  
+  .btn-click:hover, .btn-form-contact:hover {
+    color: #1E1927;
+    background-color: @yellow; }
+  
+  .btn-primary {
+    width: 100%; }
+  
+  /* CONTACT PAGE - BUTTON */
+  .btn-form-contact {
+    .margins(10px , 0px);
+    background-color: @red;
+    color: #FBF8FF; }
+  
+  /* PAGE PRICE - TAB */
+  .tab-content {
+    .margins(10px , 0px);
+}
+  
