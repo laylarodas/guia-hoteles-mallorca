@@ -16,14 +16,14 @@
   </head>
   <body>
     <!--   NAVBAR LINKS  -->
-    <nav class="navbar navbar-expand-md fixed-top navbar-hotels">
-        <a href="#" class="navbar-brand navbar-name">Guía</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-md fixed-top navbar-hotels navbar-light">
+        <a href="./index.html" class="navbar-brand navbar-name">Guía</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+                <li class="nav-item active"><a href="./index.html" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="./about.html" class="nav-link">Nosotros</a></li>
                 <li class="nav-item"><a href="./price.html" class="nav-link">Precios</a></li>
                 <li class="nav-item"><a href="./conditions.html" class="nav-link">Términos y condiciones</a></li>
@@ -47,13 +47,13 @@
 
         <!--   BANNER   -->
 
-        <div id="carouselControls" class="carousel carousel-dark carousel-fade slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              </div>
+        <div id="carouselControls" class="carousel carousel-dark carousel-fade slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselControls" data-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
+                <li data-target="#carouselControls" data-slide-to="1" aria-label="Slide 2"></li>
+                <li data-target="#carouselControls" data-slide-to="2" aria-label="Slide 3"></li>
+                <li data-target="#carouselControls" data-slide-to="3" aria-label="Slide 4"></li>
+            </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="./images/banner-hotel.png" alt="banner-1" class="d-block w-100">
@@ -80,13 +80,13 @@
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-target="#carouselControls" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                <span class="sr-only">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+              <button class="carousel-control-next" type="button" data-target="#carouselControls" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                <span class="sr-only">Next</span>
               </button>
         </div>
 
@@ -94,16 +94,16 @@
         <!--  WEBSITE INFO -->
         <div class="row mt-4">
             <div class="col-sm-3">
-                <button class="btn btn-click" type="button" data-bs-toggle="collapse" data-bs-target="#work" aria-expanded="false" aria-controls="multiCollapse1">¿Cómo funciona?</button>
+                <button class="btn btn-click" type="button" data-toggle="collapse" data-target="#work" aria-expanded="false" aria-controls="multiCollapse1">¿Cómo funciona?</button>
             </div>
             <div class="col-sm-3">
-                <button class="btn btn-click" type="button" data-bs-toggle="collapse" data-bs-target="#reserve" aria-expanded="false" aria-controls="multiCollapse2">¿Cómo reservar?</button>
+                <button class="btn btn-click" type="button" data-toggle="collapse" data-target="#reserve" aria-expanded="false" aria-controls="multiCollapse2">¿Cómo reservar?</button>
             </div>
             <div class="col-sm-3">
-                <button class="btn btn-click" type="button" data-bs-toggle="collapse" data-bs-target="#pay" aria-expanded="false" aria-controls="multiCollapse3">Medios de pago</button>
+                <button class="btn btn-click" type="button" data-toggle="collapse" data-target="#pay" aria-expanded="false" aria-controls="multiCollapse3">Medios de pago</button>
             </div>
             <div class="col-sm-3">
-                <button class="btn btn-click" type="button" data-bs-toggle="collapse" data-bs-target="#security" aria-expanded="false" aria-controls="multiCollapse4">Sitio Seguro</button>
+                <button class="btn btn-click" type="button" data-toggle="collapse" data-target="#security" aria-expanded="false" aria-controls="multiCollapse4">Sitio Seguro</button>
             </div>
         </div>
         <div class="row">
@@ -163,78 +163,78 @@
             <div class="card card-hotel d-flex flex-column justify-content-between justify-content-between">
                 <div class="card-body">
                     <img src="./images/img-6.jpg" class="card-img-top mb-2" alt="img-hotel">
-                    <h5 class="card-title" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-title="Promociones" data-bs-content="Si reservas hoy, tenes un 5% de descuento con TC">Hotel El Llorenç Parc de la Marc</h5>
+                    <h5 class="card-title" tabindex="0" role="button" data-toggle="popover" data-placement="top" data-title="Promociones" data-content="Si reservas hoy, tenes un 5% de descuento con TC">Hotel El Llorenç Parc de la Marc</h5>
                     <h6 class="card-subtitle text-muted">España</h6>
                     <p class="card-text">Historia, gastronomía y diseño exquisito son las características del hotel El Llorenç Parc de la Mar, un galardonado boutique hotel en el corazón de Palma</p>
                 </div>
                 <div>
-                    <button class="btn btn-click" data-bs-toggle="modal" data-bs-target="#contactHotel" id="reserveBtn1"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
+                    <button class="btn btn-click" data-toggle="modal" data-target="#contactHotel" id="reserveBtn1"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
                 </div>
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between">
                 <div class="card-body">
                     <img src="./images/img-1.jpg" class="card-img-top mb-2" alt="img-hotel">
-                    <h5 class="card-title" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-title="Promociones" data-bs-content="Si reservas hoy, tenes un 10% de descuento con TC">Hotel Dulce Ca's Papa</h5>
+                    <h5 class="card-title" tabindex="0" role="button" data-toggle="popover" data-placement="top" data-title="Promociones" data-content="Si reservas hoy, tenes un 10% de descuento con TC">Hotel Dulce Ca's Papa</h5>
                     <h6 class="card-subtitle text-muted">España</h6>
                     <p class="card-text">Siéntete como en casa en este hotel boutique de 13 habitaciones en el corazón de Valldemossa. Es amigable, sirve un excelente desayuno y está lleno de personalidad.</p>
                 </div>
                 <div>
-                    <button class="btn btn-click" data-bs-toggle="modal" data-bs-target="#contactHotel" id="reserveBtn2"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
+                    <button class="btn btn-click" data-toggle="modal" data-target="#contactHotel" id="reserveBtn2"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
                 </div>
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between">
                 <div class="card-body">
                     <img src="./images/img-2.jpg" class="card-img-top mb-2" alt="img-hotel">
-                    <h5 class="card-title" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-title="Promociones" data-bs-content="Si reservas hoy, tenes un 25% de descuento con TC">Finca Hotel Can Estades</h5>
+                    <h5 class="card-title" tabindex="0" role="button" data-toggle="popover" data-placement="top" data-title="Promociones" data-content="Si reservas hoy, tenes un 25% de descuento con TC">Finca Hotel Can Estades</h5>
                     <h6 class="card-subtitle text-muted">España</h6>
                     <p class="card-text">Para una escapada romántica con golf, playas, senderismo o ciclismo reserva en Can Estades Finca Hotel, a las afueras del bonito pueblo de Calvià.</p>
                 </div>
                 <div>
-                    <button class="btn btn-click" data-bs-toggle="modal" data-bs-target="#contactHotel" id="reserveBtn3"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
+                    <button class="btn btn-click" data-toggle="modal" data-target="#contactHotel" id="reserveBtn3"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
                 </div>
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between">
                 <div class="card-body">
                     <img src="./images/img-3.jpg" class="card-img-top mb-2" alt="img-hotel">
-                    <h5 class="card-title" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-title="Promociones" data-bs-content="Si reservas hoy, tenes un 15% de descuento con TC">Hotel Jumeirah</h5>
+                    <h5 class="card-title" tabindex="0" role="button" data-toggle="popover" data-placement="top" data-title="Promociones" data-content="Si reservas hoy, tenes un 15% de descuento con TC">Hotel Jumeirah</h5>
                     <h6 class="card-subtitle text-muted">España</h6>
                     <p class="card-text">Disfruta de sus lujosas suites, mímate en el spa o cena en alguno de los restaurantes de este hotel de Port de Sóller.</p>
                 </div>
                 <div>
-                    <button class="btn btn-click" data-bs-toggle="modal" data-bs-target="#contactHotel" id="reserveBtn4"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
+                    <button class="btn btn-click" data-toggle="modal" data-target="#contactHotel" id="reserveBtn4"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
                 </div>
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between">
                 <div class="card-body">
                     <img src="./images/img-4.jpg" class="card-img-top mb-2" alt="img-hotel">
-                    <h5 class="card-title" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-title="Promociones" data-bs-content="Si reservas hoy, tenes un 5% de descuento con TC">Hotel Boutique Mar Calma</h5>
+                    <h5 class="card-title" tabindex="0" role="button" data-toggle="popover" data-placement="top" data-title="Promociones" data-content="Si reservas hoy, tenes un 5% de descuento con TC">Hotel Boutique Mar Calma</h5>
                     <h6 class="card-subtitle text-muted">España</h6>
                     <p class="card-text">Reserva una estancia en el elegante hotel boutique Mar Calma para disfrutar de un estilo moderno y confortable en el Port de Pollensa</p>
                 </div>
                 <div>
-                    <button class="btn btn-click" data-bs-toggle="modal" data-bs-target="#contactHotel" id="reserveBtn5"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
+                    <button class="btn btn-click" data-toggle="modal" data-target="#contactHotel" id="reserveBtn5"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
                 </div>
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between">
                 <div class="card-body">
                     <img src="./images/img-5.jpg" class="card-img-top mb-2" alt="img-hotel">
-                    <h5 class="card-title" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-title="Promociones" data-bs-content="Si reservas hoy, tenes un 20% de descuento con TC">Hotel Can Cera</h5>
+                    <h5 class="card-title" tabindex="0" role="button" data-toggle="popover" data-placement="top" data-title="Promociones" data-content="Si reservas hoy, tenes un 20% de descuento con TC">Hotel Can Cera</h5>
                     <h6 class="card-subtitle text-muted">España</h6>
                     <p class="card-text">El hotel Can Cera, situado en pleno Casco Antiguo de Palma, dispone de 14 habitaciones que garantizan intimidad, encanto y tradición.</p>
                 </div>
                 <div>
-                    <button class="btn btn-click" data-bs-toggle="modal" data-bs-target="#contactHotel" id="reserveBtn6"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
+                    <button class="btn btn-click" data-toggle="modal" data-target="#contactHotel" id="reserveBtn6"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
                 </div>
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between">
                 <div class="card-body">
                     <img src="./images/img-7.jpg" class="card-img-top mb-2" alt="img-hotel">
-                    <h5 class="card-title" tabindex="0" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-title="Promociones" data-bs-content="Si reservas hoy, tenes un 10% de descuento con TC">Boutique Hotel Can Alomar</h5>
+                    <h5 class="card-title" tabindex="0" role="button" data-toggle="popover" data-placement="top" data-title="Promociones" data-content="Si reservas hoy, tenes un 10% de descuento con TC">Boutique Hotel Can Alomar</h5>
                     <h6 class="card-subtitle text-muted">España</h6>
                     <p class="card-text">Está situado en el prestigioso Paseo del Borne. Este lujoso hotel boutique de 5 estrellas es una mansión restaurada del siglo XV. Su restaurante de fusión, De Tokio a Lima, es uno de los mejores de Palma y cuenta con una maravillosa terraza para empaparse del ambiente.</p>
                 </div>
                 <div>
-                    <button class="btn btn-click" data-bs-toggle="modal" data-bs-target="#contactHotel" id="reserveBtn7"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
+                    <button class="btn btn-click" data-toggle="modal" data-target="#contactHotel" id="reserveBtn7"><ion-icon name="bed-outline"></ion-icon>Reservar</button>
                 </div>
             </div>
         </div>
@@ -244,8 +244,10 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5>Contacto con el hotel</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <h5 class="modal-title">Contacto con el hotel</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="aria-hidden">&times;</span>
+                        </button>
                     </div>
                     <div class="modal-body">
                         <form>
